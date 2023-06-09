@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="mysql-connector-j-8.0.33">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/driver/mysql-connector-j-8.0.33.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/barcodes-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/commons-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/forms-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/io-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/kernel-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/layout-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/pdfa-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/pdftest-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/sign-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/slf4j-nop-1.7.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/styled-xml-parser-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/iText7-Core-7.2.1-only-jars/svg-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-4.1.2/xmlbeans-3.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-4.1.2/poi-ooxml-schemas-4.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-4.1.2/poi-ooxml-4.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-4.1.2/poi-4.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-4.1.2/commons-compress-1.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/poi-4.1.2/commons-collections4-4.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

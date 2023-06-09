@@ -1,0 +1,228 @@
+[ 07/06/2023 20:40:21 ] (Anxo) Se ha conectado
+[ 07/06/2023 20:40:41 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'0','helo@flor.com','Heloise',SHA2('contraseña', 256));]
+[ 07/06/2023 20:40:48 ] (Anxo) [Eleminar usuario: DELETE FROM usuarios WHERE idUsuario=14;]
+[ 07/06/2023 20:40:54 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 07/06/2023 20:41:04 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'Manualidades');]
+[ 07/06/2023 20:41:06 ] (Anxo) [Listado estilos: SELECT idEstilos,nombre FROM estilos ORDER BY idEStilos;]
+[ 07/06/2023 20:41:13 ] (Anxo) [Eliminar estilo: DELETE FROM estilos WHERE idEstilos=2;]
+[ 07/06/2023 20:41:33 ] (Anxo) Se ha desconectado
+[ 08/06/2023 01:22:15 ] (Anxo) Se ha conectado
+[ 08/06/2023 01:22:17 ] (Anxo) Se ha desconectado
+[ 08/06/2023 01:36:09 ] (Anxo) Se ha conectado
+[ 08/06/2023 01:36:12 ] (Anxo) Se ha desconectado
+[ 08/06/2023 01:41:18 ] (Anxo) Se ha conectado
+[ 08/06/2023 01:41:19 ] (Anxo) Se ha desconectado
+[ 08/06/2023 02:06:54 ] (Anxo) Se ha conectado
+[ 08/06/2023 03:25:29 ] (Anxo) Se ha desconectado
+[ 08/06/2023 05:07:57 ] (Anxo) Se ha conectado
+[ 08/06/2023 05:08:02 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 08/06/2023 05:08:39 ] (Anxo) Se ha desconectado
+[ 08/06/2023 05:09:01 ] (Anxo) Se ha conectado
+[ 08/06/2023 05:09:04 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 08/06/2023 05:09:50 ] (Anxo) Se ha desconectado
+[ 08/06/2023 05:14:51 ] (Anxo) Se ha conectado
+[ 08/06/2023 05:14:54 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 08/06/2023 05:15:12 ] (Anxo) Se ha desconectado
+[ 08/06/2023 05:16:00 ] (Anxo) Se ha conectado
+[ 08/06/2023 05:16:03 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 08/06/2023 05:16:08 ] (Anxo) Se ha desconectado
+[ 08/06/2023 06:40:45 ] (Anxo) Se ha conectado
+[ 08/06/2023 06:40:47 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 08/06/2023 06:40:49 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 08/06/2023 06:41:38 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 08/06/2023 06:42:20 ] (Anxo) Se ha desconectado
+[ 08/06/2023 06:42:34 ] (Anxo) Se ha conectado
+[ 08/06/2023 06:42:36 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 08/06/2023 06:42:45 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 08/06/2023 06:50:50 ] (Anxo) Se ha conectado
+[ 08/06/2023 06:50:52 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 08/06/2023 06:50:54 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 08/06/2023 15:07:25 ] (Anxo) Se ha conectado
+[ 08/06/2023 15:07:47 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'0','pepe@epewl.com','Pepe',SHA2('contraseña', 256));]
+[ 08/06/2023 15:07:52 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 08/06/2023 15:07:54 ] (Anxo) [Listado usuarios exportados a PDF]
+[ 08/06/2023 15:07:59 ] (Anxo) [Listado usuarios exportados a PDF]
+[ 08/06/2023 15:08:20 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 08/06/2023 15:09:29 ] (Anxo) [Listado estilos: SELECT idEstilos,nombre FROM estilos ORDER BY idEStilos;]
+[ 08/06/2023 15:09:57 ] (Anxo) Se ha desconectado
+[ 08/06/2023 16:43:13 ] (Anxo) Se ha conectado
+[ 08/06/2023 19:51:35 ] (Anxo) Se ha desconectado
+[ 08/06/2023 23:16:04 ] (Anxo) Se ha conectado
+[ 08/06/2023 23:16:06 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 08/06/2023 23:16:08 ] (Anxo) [Listado usuarios exportados a PDF]
+[ 08/06/2023 23:16:23 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 08/06/2023 23:16:53 ] (Anxo) Se ha desconectado
+[ 08/06/2023 23:55:42 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','josito@josito.com','Josito',SHA2('contraseña', 256));]
+[ 08/06/2023 23:55:42 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'Josito'),'666666666','EL JOSO','josito.joso','El chaval le sabe pero le maneja incluso le chana');]
+[ 08/06/2023 23:55:42 ] () Error: Cannot add or update a child row: a foreign key constraint fails
+[ 08/06/2023 23:55:42 ] () Error: Cannot add or update a child row: a foreign key constraint fails
+[ 09/06/2023 00:00:24 ] (Anxo) Se ha conectado
+[ 09/06/2023 00:01:12 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','moli@manoli.com','Manoli222',SHA2('contraseña', 256));]
+[ 09/06/2023 00:01:12 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'Manoli222'),'666666666','manoli','manoli.com','manoli');]
+[ 09/06/2023 00:04:11 ] () Error: Cannot add or update a child row: a foreign key constraint fails
+[ 09/06/2023 00:04:11 ] () Error: Cannot add or update a child row: a foreign key constraint fails
+[ 09/06/2023 00:04:11 ] () Error: Cannot add or update a child row: a foreign key constraint fails
+[ 09/06/2023 00:05:42 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','fosefa@jj.com','Josefa',SHA2('contraseña', 256));]
+[ 09/06/2023 00:05:42 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'Josefa'),'6666666666','josefa','josefa.com','josefa josefa');]
+[ 09/06/2023 01:30:48 ] (0) [Listado estilos: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario]
+[ 09/06/2023 01:30:48 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 01:31:36 ] (0) [Listado estilos: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario]
+[ 09/06/2023 01:31:36 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 01:33:28 ] (0) [Listado estilos: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario]
+[ 09/06/2023 01:33:28 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 01:36:04 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 01:36:55 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 01:37:02 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 01:51:56 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 01:51:57 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 01:54:13 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 01:54:58 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:02:55 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:02:58 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:05:22 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:08:30 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:09:05 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:09:41 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:11:38 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:18:28 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:18:30 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:30:05 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:30:27 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:31:28 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:33:04 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:34:35 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:34:55 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 02:37:06 ] (0) Error: Column 'isntagram' not found.
+[ 09/06/2023 02:37:23 ] (0) Error: Column 'isntagram' not found.
+[ 09/06/2023 02:37:41 ] (0) Error: Column 'isntagram' not found.
+[ 09/06/2023 02:38:10 ] (0) Error: Column 'isntagram' not found.
+[ 09/06/2023 02:39:58 ] (0) Error: Before start of result set
+[ 09/06/2023 02:40:03 ] (0) Error: Before start of result set
+[ 09/06/2023 02:43:22 ] (0) Error: Before start of result set
+[ 09/06/2023 02:44:24 ] (0) Error: Column 'isntagram' not found.
+[ 09/06/2023 02:44:54 ] (0) Error: Column 'isntagram' not found.
+[ 09/06/2023 02:47:47 ] (0) Error: Column 'isntagram' not found.
+[ 09/06/2023 02:50:14 ] (0) Error: Column 'isntagram' not found.
+[ 09/06/2023 02:50:16 ] (0) Error: Operation not allowed after ResultSet closed
+[ 09/06/2023 03:22:32 ] (0) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 03:22:34 ] (0) [Listado usuarios exportados a PDF]
+[ 09/06/2023 03:26:16 ] (0) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 03:26:18 ] (0) [Listado usuarios exportados a PDF]
+[ 09/06/2023 03:30:54 ] (Anxo) Se ha conectado
+[ 09/06/2023 03:30:58 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 03:31:02 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 09/06/2023 03:31:04 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 09/06/2023 03:33:40 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 09/06/2023 03:33:45 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 09/06/2023 03:37:21 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 09/06/2023 03:37:22 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 09/06/2023 03:37:48 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 09/06/2023 03:38:49 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 09/06/2023 03:38:51 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 09/06/2023 03:54:38 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 09/06/2023 03:54:39 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 09/06/2023 03:57:41 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 04:14:09 ] (0) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 04:14:19 ] (0) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 04:14:21 ] (0) [Listado artistas exportados a PDF]
+[ 09/06/2023 04:14:25 ] (0) [Listado Artistas exportados a XLSX]
+[ 09/06/2023 05:10:11 ] (Anxo) Se ha conectado
+[ 09/06/2023 05:11:59 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','luis@gmail.com','Luis',SHA2('contraseña', 256));]
+[ 09/06/2023 05:11:59 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'Luis'),'6666666666','luisiño','luis.com','Luis es un usuario de pureba');]
+[ 09/06/2023 05:12:04 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','luis@gmail.com','Luis',SHA2('contraseña', 256));]
+[ 09/06/2023 05:12:04 ] (Anxo) Error: Subquery returns more than 1 row
+[ 09/06/2023 05:14:59 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','mario@gmai.com','María José',SHA2('contraseña', 256));]
+[ 09/06/2023 05:15:04 ] (Anxo) Se ha desconectado
+[ 09/06/2023 05:23:34 ] (Anxo) Se ha conectado
+[ 09/06/2023 05:24:42 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','mateovic@gmail.com','Mateo',SHA2('contraseña', 256));]
+[ 09/06/2023 05:24:42 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'Mateo'),'666666666','mateovic','mateo.vic','Músico apasionado por la fotografía');]
+[ 09/06/2023 05:26:49 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','manoli@manolito.com','Manolito02',SHA2('contraseña', 256));]
+[ 09/06/2023 05:26:49 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'Manolito02'),'dskfosdkfd','dskfsdf','dskfjsdf','dfadsfdsafdsf');]
+[ 09/06/2023 05:27:43 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','qwwqqwqw','manolitowq',SHA2('contraseña', 256));]
+[ 09/06/2023 05:27:43 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'manolitowq'),'qwwqqwqwqw','wqwqwqwqqw','wqwqwqwqw','sdfdsfdasdsffdsa');]
+[ 09/06/2023 05:27:51 ] (Anxo) Se ha desconectado
+[ 09/06/2023 05:28:16 ] (Anxo) Se ha conectado
+[ 09/06/2023 05:28:18 ] (Anxo) Error: Column 'isntagram' not found.
+[ 09/06/2023 05:33:43 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','dkfoskfosfksdof','Mateovic2',SHA2('1234', 256));]
+[ 09/06/2023 05:33:43 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'Mateovic2'),'dsokfsodksdof','dsofksdofksdo','sdfkosdpokfsdop','fddfafdsfdf');]
+[ 09/06/2023 05:33:48 ] (Anxo) Error: Column 'isntagram' not found.
+[ 09/06/2023 05:35:50 ] (anxo) Error: Column 'isntagram' not found.
+[ 09/06/2023 05:36:51 ] (anxo) Error: Column 'isntagram' not found.
+[ 09/06/2023 05:37:47 ] (anxo) Error: Column 'isntagram' not found.
+[ 09/06/2023 05:40:20 ] (Anxo) Se ha conectado
+[ 09/06/2023 05:40:25 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 09/06/2023 06:16:18 ] (Anxo) Se ha desconectado
+[ 09/06/2023 06:18:10 ] (Anxo) Se ha conectado
+[ 09/06/2023 06:18:13 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 09/06/2023 06:18:26 ] (Anxo) [Eleminar usuario: DELETE FROM usuarios WHERE idUsuario=1;]
+[ 09/06/2023 06:19:14 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'FOTOGRAFÍA');]
+[ 09/06/2023 06:19:27 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'ILUSTRACIÓN');]
+[ 09/06/2023 06:19:31 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'CINE');]
+[ 09/06/2023 06:19:35 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'OTROS');]
+[ 09/06/2023 06:19:41 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'MANUALIDADES');]
+[ 09/06/2023 06:19:48 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'RETRATO');]
+[ 09/06/2023 06:19:57 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'MODERNISTA');]
+[ 09/06/2023 06:20:05 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'CONCEPT ART');]
+[ 09/06/2023 06:20:09 ] (Anxo) [Listado estilos: SELECT idEstilos,nombre FROM estilos ORDER BY idEStilos;]
+[ 09/06/2023 06:22:46 ] (Anxo) Se ha desconectado
+[ 09/06/2023 06:25:01 ] (Anxo) Se ha conectado
+[ 09/06/2023 06:25:58 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','noepd@gmail.com','Noe',SHA2('contraseña', 256));]
+[ 09/06/2023 06:25:58 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'Noe'),'666666666','noepd','noepd.com','Ilustradora y escultora');]
+[ 09/06/2023 06:27:24 ] (Anxo) Se ha desconectado
+[ 09/06/2023 06:27:52 ] (Anxo) Se ha conectado
+[ 09/06/2023 06:27:54 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:30:16 ] (Anxo) Se ha desconectado
+[ 09/06/2023 06:30:24 ] (anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:30:43 ] (anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:30:53 ] (anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:32:00 ] (anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:33:23 ] (anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:34:08 ] (Anxo) Se ha conectado
+[ 09/06/2023 06:35:26 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','mateovic@gmail.com','Mateovic',SHA2('contraseña', 256));]
+[ 09/06/2023 06:35:26 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'Mateovic'),'666666666','mateovic','mateovic.com','músico');]
+[ 09/06/2023 06:38:33 ] (Anxo) Error: Column 'isntagram' not found.
+[ 09/06/2023 06:41:31 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:42:17 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','mateovic@mateovic,cim','mateovic',SHA2('contraseña', 256));]
+[ 09/06/2023 06:42:17 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'mateovic'),'666666666','mateovic','mateovic.com','musico');]
+[ 09/06/2023 06:42:26 ] (Anxo) Error: Column 'isntagram' not found.
+[ 09/06/2023 06:42:38 ] (Anxo) Se ha desconectado
+[ 09/06/2023 06:46:07 ] (Anxo) Se ha conectado
+[ 09/06/2023 06:46:14 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:48:31 ] (Anxo) Se ha desconectado
+[ 09/06/2023 06:48:48 ] (Anxo) Se ha conectado
+[ 09/06/2023 06:48:51 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:50:14 ] (Anxo) Se ha conectado
+[ 09/06/2023 06:50:17 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:51:37 ] (Anxo) Se ha conectado
+[ 09/06/2023 06:51:49 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:52:47 ] (Anxo) Se ha conectado
+[ 09/06/2023 06:52:49 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 06:53:35 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 07:38:18 ] (anxo) Error: Unknown column 'idArtistaFK' in 'where clause'
+[ 09/06/2023 07:41:11 ] (anxo) [Eleminar Artista: DELETE FROM estilos_artistas WHERE idArtistasFK=5;\|DELETE FROM artistas WHERE idUsuarioFK=5;\|DELETE FROM usuarios WHERE idUsuario=5;]
+[ 09/06/2023 18:21:29 ] (Anxo) Se ha conectado
+[ 09/06/2023 18:21:30 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 18:26:56 ] () Error: Column 'estilos.nombre-
+' not found.
+[ 09/06/2023 18:28:05 ] () Error: Column 'estilos.nombre-
+' not found.
+[ 09/06/2023 18:28:19 ] () Error: Column 'estilos.nombre-
+' not found.
+[ 09/06/2023 18:28:39 ] () Error: Column 'estilos.nombre-
+' not found.
+[ 09/06/2023 19:52:55 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='NoeMod',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
+[ 09/06/2023 19:53:26 ] (Anxo) Se ha conectado
+[ 09/06/2023 19:53:29 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 09/06/2023 19:53:38 ] (Anxo) Se ha desconectado
+[ 09/06/2023 19:54:34 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('contraseña', 256) WHERE idUsuario = 3;]
+[ 09/06/2023 19:54:34 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='NoeMod',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
+[ 09/06/2023 19:56:17 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('contraseña', 256) WHERE idUsuario = 3;]
+[ 09/06/2023 19:56:17 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='NoeMod3',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
+[ 09/06/2023 19:56:43 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='NoeMod3',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
+[ 09/06/2023 19:56:44 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='NoeMod3',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
+[ 09/06/2023 20:00:57 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='NoeMod4',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
+[ 09/06/2023 20:29:35 ] (Anxo) [Modificar Artista: UPDATE usuarios SET alias ='NoeMod5',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
+[ 09/06/2023 20:29:35 ] () Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM estilos_artistas WHERE idArtistaFK = 3' at line 1
+[ 09/06/2023 20:32:27 ] (Anxo) [Modificar Artista: UPDATE usuarios SET alias ='NoeMod4',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
+[ 09/06/2023 20:32:27 ] () Error: Unknown column 'idArtistaFK' in 'where clause'
+[ 09/06/2023 20:37:30 ] (Anxo) [Modificar Artista: UPDATE usuarios SET alias ='NoeMod5',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
