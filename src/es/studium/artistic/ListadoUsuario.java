@@ -30,7 +30,7 @@ public class ListadoUsuario implements WindowListener, ActionListener {
         ventanaUsuarioListado.add(btnExportPdf);
         btnExportPdf.addActionListener(this);
 
-
+        ventanaUsuarioListado.setResizable(false);
         ventanaUsuarioListado.setLocationRelativeTo(null);
         ventanaUsuarioListado.setVisible(true);
         areaListado.append(conexion.listadoUsuario(usuLog));

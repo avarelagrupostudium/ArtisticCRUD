@@ -63,7 +63,9 @@ public class BajaUsuario implements WindowListener, ActionListener {
             dlgConfirmarBaja.setVisible(false);
         } else if (dlgBajaConfirmada.isActive()) {
             dlgBajaConfirmada.setVisible(false);
-            ventanaBajaUsuario.setVisible(false);
+            dlgConfirmarBaja.setVisible(false);
+            conexion.rellenarChoiceUsuarios(choUsuario);;
+
         }
     }
     @Override

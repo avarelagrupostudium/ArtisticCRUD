@@ -57,8 +57,9 @@ public class NuevoUsuario implements WindowListener, ActionListener, ItemListene
         ventanaNuevoUsuario.add(lblPassword2);
         txtPassword2.setEchoChar('*');
         ventanaNuevoUsuario.add(txtPassword2);
-        ventanaNuevoUsuario.add(lblUsuarioAdmin);
+
         if (tipoUsuario == 0) {
+            ventanaNuevoUsuario.add(lblUsuarioAdmin);
             c1.addItemListener(this);
             c2.addItemListener(this);
             ventanaNuevoUsuario.add(c1);

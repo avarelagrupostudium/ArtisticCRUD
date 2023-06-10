@@ -12,10 +12,11 @@ public class ListadoEstilo implements WindowListener, ActionListener {
     TextArea areaListado = new TextArea(10, 25);
     Button btnExportExcel = new Button("Excel");
     Button btnExportPdf = new Button("Pdf");
-
+    String usuLog;
     Conexion conexion = new Conexion();
-    ListadoEstilo(String usuLog){
-        ventanaEstilosListado.setSize(250, 300);
+    ListadoEstilo(String usuarioPropagado){
+        this.usuLog = usuarioPropagado;
+        ventanaEstilosListado.setSize(250, 280);
         ventanaEstilosListado.setLayout(new FlowLayout());
         ventanaEstilosListado.addWindowListener(this);
         ventanaEstilosListado.add(lblListado);
@@ -26,7 +27,7 @@ public class ListadoEstilo implements WindowListener, ActionListener {
         ventanaEstilosListado.add(btnExportPdf);
         btnExportPdf.addActionListener(this);
 
-
+        ventanaEstilosListado.setResizable(false);
         ventanaEstilosListado.setLocationRelativeTo(null);
         ventanaEstilosListado.setVisible(true);
         areaListado.append(conexion.listadoEstilos(usuLog));
@@ -63,8 +64,13 @@ public class ListadoEstilo implements WindowListener, ActionListener {
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {}
-
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource().equals(btnExportPdf)){
+            conexion.estiloListadoPDF(usuLog);
+        } else if (e.getSource().equals(btnExportExcel)) {
+            conexion.estiloListadoExcel(usuLog);
+        }
+    }
 }
 
 

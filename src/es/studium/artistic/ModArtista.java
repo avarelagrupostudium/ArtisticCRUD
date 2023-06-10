@@ -92,12 +92,13 @@ public class ModArtista implements WindowListener, ActionListener {
         } else if (dlgAsignarEstilos.isActive()) {
             dlgAsignarEstilos.setVisible(false);
         } else if (dlgExito.isActive()) {
-            dlgExito.setVisible(false);
-            dlgAsignarEstilos.setVisible(false);
             dlgModArtista.setVisible(false);
+            dlgAsignarEstilos.setVisible(false);
+            dlgExito.setVisible(false);
             borrarDatos();
             conexion.rellenarChoiceArtistas(choArtista);
         } else if (dlgerror.isActive()) {
+            dlgAsignarEstilos.setVisible(false);
             dlgerror.setVisible(false);
         }
     }
@@ -154,7 +155,7 @@ public class ModArtista implements WindowListener, ActionListener {
         cadenaEstilos = cadenaEstilos.replaceAll("\\n","");
         String [] partsEstilos = cadenaEstilos.split("-");
         System.out.println(Arrays.toString(partsEstilos));
-        if (conexion.updateArtista(artista,usuLog) > 0 && conexion.updateEstilosArtista(artista.getIdUsuario(),partsEstilos) > 0){
+        if (conexion.updateArtista(artista,usuLog) > 0 && conexion.updateEstilosArtista(artista.getIdUsuario(),partsEstilos,usuLog) > 0){
             pantallaExito();
         }else {
             pantallaError();

@@ -32,12 +32,6 @@ public class MenuPrincipal implements WindowListener, ActionListener {
     MenuItem bajaPublicacion = new MenuItem("Baja");
     MenuItem modPublicacion = new MenuItem("Modificación");
     MenuItem listadoPublicacion = new MenuItem("Listado");
-    //Comentarios
-    Menu comentarios = new Menu("Comentarios");
-    MenuItem nuevoComentario = new MenuItem("Nuevo");
-    MenuItem bajaComentario = new MenuItem("Baja");
-    MenuItem modComentario = new MenuItem("Modificación");
-    MenuItem listadoComentario = new MenuItem("Listado");
     //Estilos
     Menu estilos = new Menu("Estilos");
     MenuItem nuevoEstilo = new MenuItem("Nuevo");
@@ -60,7 +54,7 @@ public class MenuPrincipal implements WindowListener, ActionListener {
         ventanaMenuPrincipal.addWindowListener(this);
         ventanaMenuPrincipal.setMenuBar(barraPrincipal);
         lblUsuarioLogueado.setFont(myFont);
-        lblUsuarioLogueado.setText("Bienvenido de nuevo " + usuLog);
+        lblUsuarioLogueado.setText("BIENVENIDO A ARTISTIC " + usuLog);
         ventanaMenuPrincipal.add(lblUsuarioLogueado);
         //Action Listeners Usuarios
         nuevoUsuario.addActionListener(this);
@@ -97,22 +91,7 @@ public class MenuPrincipal implements WindowListener, ActionListener {
         barraPrincipal.add(publicaciones);
         publicaciones.add(nuevoPublicacion);
         if (tipoUsuario == 0) {
-            publicaciones.add(bajaPublicacion);
-            publicaciones.add(modPublicacion);
             publicaciones.add(listadoPublicacion);
-        }
-        //Action Listeners Comentarios
-        nuevoComentario.addActionListener(this);
-        bajaComentario.addActionListener(this);
-        modComentario.addActionListener(this);
-        listadoComentario.addActionListener(this);
-        //Elementos Comentarios
-        barraPrincipal.add(comentarios);
-        comentarios.add(nuevoComentario);
-        if (tipoUsuario == 0) {
-            comentarios.add(bajaComentario);
-            comentarios.add(modComentario);
-            comentarios.add(listadoComentario);
         }
         //Action Listeners Estilos
         nuevoEstilo.addActionListener(this);
@@ -172,21 +151,13 @@ public class MenuPrincipal implements WindowListener, ActionListener {
         } else if (e.getSource().equals(listadoArtista)) {
             new ListadoArtista(usuLog);
         } else if (e.getSource().equals(nuevoPublicacion)) {
-            //new NuevoPublicacion(usuLog);
+            new NuevoPublicacion(usuLog);
         } else if (e.getSource().equals(bajaPublicacion)) {
             //new BajaPublicacion(usuLog);
         } else if (e.getSource().equals(modPublicacion)) {
             //new ModPublicacion(usuLog);
         } else if (e.getSource().equals(listadoPublicacion)) {
-            //new ListadoPublicacion(usuLog);
-        } else if (e.getSource().equals(nuevoComentario)) {
-            //new NuevoComentario(usuLog);
-        } else if (e.getSource().equals(bajaComentario)) {
-            new BajaComentario(usuLog);
-        } else if (e.getSource().equals(modComentario)) {
-            //new ModComentario(usuLog);
-        } else if (e.getSource().equals(listadoComentario)) {
-            //new ListadoComentario(usuLog);
+            new ListadoPublicacion(usuLog);
         } else if (e.getSource().equals(nuevoEstilo)) {
             new NuevoEstilo(usuLog);
         } else if (e.getSource().equals(bajaEstilo)) {

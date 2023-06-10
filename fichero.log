@@ -226,3 +226,221 @@
 [ 09/06/2023 20:32:27 ] (Anxo) [Modificar Artista: UPDATE usuarios SET alias ='NoeMod4',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
 [ 09/06/2023 20:32:27 ] () Error: Unknown column 'idArtistaFK' in 'where clause'
 [ 09/06/2023 20:37:30 ] (Anxo) [Modificar Artista: UPDATE usuarios SET alias ='NoeMod5',correo ='noepd@gmail.com' WHERE idUsuario = 3;\|UPDATE artistas SET tlf = '666666666',instagram = 'noepd',web = 'noepd.com',biografia = 'Ilustradora y escultora' WHERE idUsuarioFK = 3;]
+[ 09/06/2023 23:33:35 ] (Anxo) [Listado de publicaciones: SELECT 
+	publicaciones.idPublicacion,
+	usuarios.alias,
+    estilos.nombre, 
+    DATE_FORMAT(publicaciones.fecha, '%d/%m/%Y') AS 'fecha', 
+    publicaciones.texto
+FROM
+	publicaciones
+		INNER JOIN
+			artistas ON publicaciones.idArtistaFK = artistas.idUsuarioFK
+				INNER JOIN
+					usuarios ON artistas.idUsuarioFK = usuarios.idUsuario
+						INNER JOIN
+							estilos ON publicaciones.idEstiloFK = estilos.idEstilos;]
+[ 09/06/2023 23:34:11 ] (Anxo) [Listado de publicaciones: SELECT 
+	publicaciones.idPublicacion,
+	usuarios.alias,
+    estilos.nombre, 
+    DATE_FORMAT(publicaciones.fecha, '%d/%m/%Y') AS 'fecha', 
+    publicaciones.texto
+FROM
+	publicaciones
+		INNER JOIN
+			artistas ON publicaciones.idArtistaFK = artistas.idUsuarioFK
+				INNER JOIN
+					usuarios ON artistas.idUsuarioFK = usuarios.idUsuario
+						INNER JOIN
+							estilos ON publicaciones.idEstiloFK = estilos.idEstilos;]
+[ 09/06/2023 23:34:28 ] (Anxo) [Listado de publicaciones: SELECT 
+	publicaciones.idPublicacion,
+	usuarios.alias,
+    estilos.nombre, 
+    DATE_FORMAT(publicaciones.fecha, '%d/%m/%Y') AS 'fecha', 
+    publicaciones.texto
+FROM
+	publicaciones
+		INNER JOIN
+			artistas ON publicaciones.idArtistaFK = artistas.idUsuarioFK
+				INNER JOIN
+					usuarios ON artistas.idUsuarioFK = usuarios.idUsuario
+						INNER JOIN
+							estilos ON publicaciones.idEstiloFK = estilos.idEstilos;]
+[ 09/06/2023 23:50:49 ] (Anxo) [Listado de publicaciones: SELECT 
+	publicaciones.idPublicacion,
+	usuarios.alias,
+    estilos.nombre, 
+    DATE_FORMAT(publicaciones.fecha, '%d/%m/%Y') AS 'fecha', 
+    publicaciones.texto
+FROM
+	publicaciones
+		INNER JOIN
+			artistas ON publicaciones.idArtistaFK = artistas.idUsuarioFK
+				INNER JOIN
+					usuarios ON artistas.idUsuarioFK = usuarios.idUsuario
+						INNER JOIN
+							estilos ON publicaciones.idEstiloFK = estilos.idEstilos;]
+[ 09/06/2023 23:50:51 ] (Anxo) [Listado publicaciones exportados a PDF]
+[ 10/06/2023 00:05:02 ] (Anxo) [Listado de publicaciones: SELECT 
+	publicaciones.idPublicacion,
+	usuarios.alias,
+    estilos.nombre, 
+    DATE_FORMAT(publicaciones.fecha, '%d/%m/%Y') AS 'fecha', 
+    publicaciones.texto
+FROM
+	publicaciones
+		INNER JOIN
+			artistas ON publicaciones.idArtistaFK = artistas.idUsuarioFK
+				INNER JOIN
+					usuarios ON artistas.idUsuarioFK = usuarios.idUsuario
+						INNER JOIN
+							estilos ON publicaciones.idEstiloFK = estilos.idEstilos;]
+[ 10/06/2023 00:05:07 ] (Anxo) [Listado Publicaciones exportados a XLSX]
+[ 10/06/2023 00:05:29 ] (Anxo) [Listado Publicaciones exportados a XLSX]
+[ 10/06/2023 00:08:00 ] (Anxo) [Listado de publicaciones: SELECT 
+	publicaciones.idPublicacion,
+	usuarios.alias,
+    estilos.nombre, 
+    DATE_FORMAT(publicaciones.fecha, '%d/%m/%Y') AS 'fecha', 
+    publicaciones.texto
+FROM
+	publicaciones
+		INNER JOIN
+			artistas ON publicaciones.idArtistaFK = artistas.idUsuarioFK
+				INNER JOIN
+					usuarios ON artistas.idUsuarioFK = usuarios.idUsuario
+						INNER JOIN
+							estilos ON publicaciones.idEstiloFK = estilos.idEstilos;]
+[ 10/06/2023 00:09:13 ] (Anxo) [Listado Publicaciones exportados a XLSX]
+[ 10/06/2023 00:11:07 ] (Anxo) [Listado de publicaciones: SELECT 
+	publicaciones.idPublicacion,
+	usuarios.alias,
+    estilos.nombre, 
+    DATE_FORMAT(publicaciones.fecha, '%d/%m/%Y') AS 'fecha', 
+    publicaciones.texto
+FROM
+	publicaciones
+		INNER JOIN
+			artistas ON publicaciones.idArtistaFK = artistas.idUsuarioFK
+				INNER JOIN
+					usuarios ON artistas.idUsuarioFK = usuarios.idUsuario
+						INNER JOIN
+							estilos ON publicaciones.idEstiloFK = estilos.idEstilos;]
+[ 10/06/2023 00:11:49 ] (Anxo) [Listado Publicaciones exportados a XLSX]
+[ 10/06/2023 00:11:52 ] (Anxo) [Listado de publicaciones: SELECT 
+	publicaciones.idPublicacion,
+	usuarios.alias,
+    estilos.nombre, 
+    DATE_FORMAT(publicaciones.fecha, '%d/%m/%Y') AS 'fecha', 
+    publicaciones.texto
+FROM
+	publicaciones
+		INNER JOIN
+			artistas ON publicaciones.idArtistaFK = artistas.idUsuarioFK
+				INNER JOIN
+					usuarios ON artistas.idUsuarioFK = usuarios.idUsuario
+						INNER JOIN
+							estilos ON publicaciones.idEstiloFK = estilos.idEstilos;]
+[ 10/06/2023 00:11:53 ] (Anxo) [Listado Publicaciones exportados a XLSX]
+[ 10/06/2023 00:24:23 ] (anxo) [Listado estilos: SELECT idEstilos,nombre FROM estilos ORDER BY idEStilos;]
+[ 10/06/2023 00:43:35 ] (anxo) [Listado estilos: SELECT idEstilos,nombre FROM estilos ORDER BY idEStilos;]
+[ 10/06/2023 00:43:37 ] (anxo) [Listado estilos exportados a PDF]
+[ 10/06/2023 00:45:19 ] (anxo) [Listado estilos: SELECT idEstilos,nombre FROM estilos ORDER BY idEStilos;]
+[ 10/06/2023 00:45:21 ] (anxo) [Listado estilos exportados a PDF]
+[ 10/06/2023 00:45:54 ] (anxo) [Listado estilos: SELECT idEstilos,nombre FROM estilos ORDER BY idEStilos;]
+[ 10/06/2023 00:45:55 ] (anxo) [Listado estilos exportados a PDF]
+[ 10/06/2023 00:54:45 ] (anxo) [Listado estilos: SELECT idEstilos,nombre FROM estilos ORDER BY idEStilos;]
+[ 10/06/2023 00:54:47 ] (anxo) [Listado estilos exportados a XLSX]
+[ 10/06/2023 00:54:54 ] (anxo) [Listado estilos exportados a PDF]
+[ 10/06/2023 00:56:55 ] (Anxo ) Se ha conectado
+[ 10/06/2023 00:57:05 ] (Anxo ) Se ha desconectado
+[ 10/06/2023 00:58:00 ] (Anxo) Se ha conectado
+[ 10/06/2023 00:59:59 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','fabio@yahoo.es','Fabio_Guatemala',SHA2('1234', 256));]
+[ 10/06/2023 01:00:08 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 10/06/2023 01:00:55 ] (Anxo) [Listado usuarios exportados a PDF]
+[ 10/06/2023 01:01:02 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 10/06/2023 01:02:01 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('12345', 256) WHERE idUsuario = 6;]
+[ 10/06/2023 01:02:01 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='Fabio_Chipre',correo ='fabio@yahoo.es', tipoUsuario = 1 WHERE idUsuario = 6;]
+[ 10/06/2023 01:02:52 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','ewrwerwer','ewrerewrwe',SHA2('anxo', 256));]
+[ 10/06/2023 01:04:44 ] (Anxo) Se ha desconectado
+[ 10/06/2023 01:05:25 ] (Fabio_Chipre) Se ha conectado
+[ 10/06/2023 01:05:44 ] (Fabio_Chipre) Se ha desconectado
+[ 10/06/2023 01:07:03 ] (Anxo) Se ha conectado
+[ 10/06/2023 01:07:09 ] (Anxo) [Eleminar usuario: DELETE FROM usuarios WHERE idUsuario=7;]
+[ 10/06/2023 01:08:07 ] (Anxo) Se ha desconectado
+[ 10/06/2023 01:09:09 ] (Anxo) Se ha conectado
+[ 10/06/2023 01:09:12 ] (Anxo) Se ha desconectado
+[ 10/06/2023 05:31:53 ] (Anxo) Se ha conectado
+[ 10/06/2023 06:35:11 ] (Anxo) Se ha desconectado
+[ 10/06/2023 06:35:38 ] (Anxo) Se ha conectado
+[ 10/06/2023 06:35:40 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 10/06/2023 06:36:24 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 10/06/2023 06:36:35 ] (Anxo) [Listado usuarios exportados a PDF]
+[ 10/06/2023 06:36:39 ] (Anxo) [Listado usuarios exportados a XLSX]
+[ 10/06/2023 06:37:47 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','franStudium@gmail.com ','Fran',SHA2('contraseña', 256));]
+[ 10/06/2023 06:38:59 ] (Anxo) [Eleminar usuario: DELETE FROM usuarios WHERE idUsuario=2;]
+[ 10/06/2023 06:39:01 ] (Anxo) [Eleminar usuario: DELETE FROM usuarios WHERE idUsuario=2;]
+[ 10/06/2023 06:42:48 ] (Anxo) Se ha conectado
+[ 10/06/2023 06:43:14 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','4324324','324324234',SHA2('123', 256));]
+[ 10/06/2023 06:43:31 ] (Anxo) [Eleminar usuario: DELETE FROM usuarios WHERE idUsuario=3;]
+[ 10/06/2023 06:43:43 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='Anxo',correo ='varelarodriguezanxo@gmail.com', tipoUsuario = 0 WHERE idUsuario = 1;]
+[ 10/06/2023 07:13:08 ] (Anxo) Se ha conectado
+[ 10/06/2023 07:13:33 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','manoli@','Manoli',SHA2('contraseña', 256));]
+[ 10/06/2023 07:20:35 ] (Anxo) Se ha conectado
+[ 10/06/2023 07:20:44 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('', 256) WHERE idUsuario = 4;]
+[ 10/06/2023 07:20:44 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='Manoli',correo ='manoli@', tipoUsuario = 1 WHERE idUsuario = 4;]
+[ 10/06/2023 07:20:50 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('', 256) WHERE idUsuario = 4;]
+[ 10/06/2023 07:20:50 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='Manoli3',correo ='manoli@', tipoUsuario = 1 WHERE idUsuario = 4;]
+[ 10/06/2023 07:20:51 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('', 256) WHERE idUsuario = 4;]
+[ 10/06/2023 07:20:51 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='Manoli3',correo ='manoli@', tipoUsuario = 1 WHERE idUsuario = 4;]
+[ 10/06/2023 07:21:00 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('', 256) WHERE idUsuario = 4;]
+[ 10/06/2023 07:21:00 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='Manoli33',correo ='manoli@', tipoUsuario = 1 WHERE idUsuario = 4;]
+[ 10/06/2023 07:21:02 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('', 256) WHERE idUsuario = 4;]
+[ 10/06/2023 07:21:02 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='Manoli33',correo ='manoli@', tipoUsuario = 1 WHERE idUsuario = 4;]
+[ 10/06/2023 07:21:04 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('', 256) WHERE idUsuario = 4;]
+[ 10/06/2023 07:21:04 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='Manoli33',correo ='manoli@', tipoUsuario = 1 WHERE idUsuario = 4;]
+[ 10/06/2023 07:22:43 ] (Anxo) Se ha conectado
+[ 10/06/2023 07:22:51 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('', 256) WHERE idUsuario = 4;]
+[ 10/06/2023 07:22:51 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='Manoli333',correo ='manoli@', tipoUsuario = 1 WHERE idUsuario = 4;]
+[ 10/06/2023 07:24:06 ] (Anxo) Se ha conectado
+[ 10/06/2023 07:26:23 ] (Anxo) Se ha conectado
+[ 10/06/2023 07:26:44 ] (Anxo) [Modificar contraseña: UPDATE usuarios SET password = SHA2('123', 256) WHERE idUsuario = 4;]
+[ 10/06/2023 07:26:44 ] (Anxo) [Modificar usuario: UPDATE usuarios SET alias ='manoli',correo ='m@m-com', tipoUsuario = 1 WHERE idUsuario = 4;]
+[ 10/06/2023 07:26:53 ] (Anxo) [Listado de usuarios: SELECT idUsuario,tipoUsuario,alias,correo FROM usuarios ORDER BY idUsuario;]
+[ 10/06/2023 07:29:35 ] (Anxo) Se ha conectado
+[ 10/06/2023 07:34:42 ] (Anxo) Se ha conectado
+[ 10/06/2023 07:36:14 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'ILUSTRACIÓN');]
+[ 10/06/2023 07:36:23 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'CINE');]
+[ 10/06/2023 07:36:28 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'FOTOGRAFÍA');]
+[ 10/06/2023 07:36:34 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'RETRATO');]
+[ 10/06/2023 07:36:44 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'MANUALIDADES');]
+[ 10/06/2023 07:36:50 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'ESCULTURA');]
+[ 10/06/2023 07:36:55 ] (Anxo) [Alta estilo: INSERT INTO estilos VALUES(null,'CONCEPT ART');]
+[ 10/06/2023 07:37:10 ] (Anxo) [Eliminar estilo: DELETE FROM estilos WHERE idEstilos=4;]
+[ 10/06/2023 07:37:11 ] (Anxo) Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 10/06/2023 07:39:06 ] (Anxo) Se ha conectado
+[ 10/06/2023 07:39:30 ] (Anxo) [Eliminar estilo: DELETE FROM estilos WHERE idEstilos=7;]
+[ 10/06/2023 07:39:32 ] (Anxo) Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 10/06/2023 07:40:45 ] (Anxo) Se ha conectado
+[ 10/06/2023 07:41:02 ] (Anxo) [Eliminar estilo: DELETE FROM estilos WHERE idEstilos=6;]
+[ 10/06/2023 07:41:12 ] (Anxo) [Listado estilos: SELECT idEstilos,nombre FROM estilos ORDER BY idEStilos;]
+[ 10/06/2023 07:45:50 ] (Anxo) Se ha conectado
+[ 10/06/2023 07:47:10 ] (Anxo) Se ha conectado
+[ 10/06/2023 08:00:14 ] (anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','moe@pd.com','Noe',SHA2('contraseña', 256));]
+[ 10/06/2023 08:00:14 ] (anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'Noe'),'666666666','noepd','noepd.com','ilustradora');]
+[ 10/06/2023 08:00:15 ] (anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','','',SHA2('', 256));]
+[ 10/06/2023 08:00:15 ] (anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = ''),'','','','');]
+[ 10/06/2023 08:01:33 ] (anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','pepe','pepe',SHA2('pepe', 256));]
+[ 10/06/2023 08:01:33 ] (anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = 'pepe'),'pepe','pepe','pepe','pepe');]
+[ 10/06/2023 08:02:06 ] (Anxo) Se ha conectado
+[ 10/06/2023 08:02:34 ] (Anxo) [Eleminar Artista: DELETE FROM estilos_artistas WHERE idArtistasFK=6;\|DELETE FROM artistas WHERE idUsuarioFK=6;\|DELETE FROM usuarios WHERE idUsuario=6;]
+[ 10/06/2023 08:02:43 ] (Anxo) [Eleminar Artista: DELETE FROM estilos_artistas WHERE idArtistasFK=7;\|DELETE FROM artistas WHERE idUsuarioFK=7;\|DELETE FROM usuarios WHERE idUsuario=7;]
+[ 10/06/2023 08:02:44 ] (Anxo) Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ 10/06/2023 08:03:25 ] (Anxo) [Listado de artistas: SELECT idUsuarioFK,alias,correo,tlf,instagram,web,biografia FROM artistas INNER JOIN usuarios ON artistas.idUsuarioFK = usuarios.idUsuario;
+[ 10/06/2023 08:03:33 ] (Anxo) [Eleminar Artista: DELETE FROM estilos_artistas WHERE idArtistasFK=5;\|DELETE FROM artistas WHERE idUsuarioFK=5;\|DELETE FROM usuarios WHERE idUsuario=5;]
+[ 10/06/2023 08:03:54 ] (Anxo) [Alta de Usuario INSERT INTO usuarios VALUES(null,'1','21212121','21321',SHA2('123', 256));]
+[ 10/06/2023 08:03:54 ] (Anxo) [Alta artista: INSERT INTO artistas VALUES((SELECT idUsuario FROM usuarios WHERE alias = '21321'),'212121','21212121','212121','122213321');]
+[ 10/06/2023 08:04:04 ] (Anxo) [Eleminar Artista: DELETE FROM estilos_artistas WHERE idArtistasFK=8;\|DELETE FROM artistas WHERE idUsuarioFK=8;\|DELETE FROM usuarios WHERE idUsuario=8;]
+[ 10/06/2023 08:04:08 ] (Anxo) Se ha desconectado

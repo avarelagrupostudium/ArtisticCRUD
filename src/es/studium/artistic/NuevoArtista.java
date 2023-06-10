@@ -93,9 +93,16 @@ public class NuevoArtista implements WindowListener, ActionListener {
             ventanaNuevoArtista.setVisible(false);
         } else if (dlgAsignarEstilos.isActive()) {
             dlgAsignarEstilos.setVisible(false);
+            txtaEstilosAsignar.setText("");
+            conexion.rellenarChoiceEstilos(choEstilos);
         } else if (dlgerror.isActive()) {
             dlgerror.setVisible(false);
             dlgAsignarEstilos.setVisible(false);
+        } else if (dlgExito.isActive()) {
+            borrarNuevoArtista();
+            dlgAsignarEstilos.setVisible(false);
+            dlgExito.setVisible(false);
+
         }
     }
     @Override
@@ -113,12 +120,14 @@ public class NuevoArtista implements WindowListener, ActionListener {
         if (e.getSource().equals(btnCancelar)){
             ventanaNuevoArtista.setVisible(false);
         } else if (e.getSource().equals(btnSiguiente)) {
-
-            ventanaAdignarEstilos();
+            if (comprobarCampos()) {
+                ventanaAdignarEstilos();
+            }else{pantallaError();}
         } else if (e.getSource().equals(btnAddEstilo)) {
             if (choEstilos.getSelectedIndex()>0){
                 txtaEstilosAsignar.append(choEstilos.getSelectedItem()+"-\n");
                 choEstilos.remove(choEstilos.getSelectedIndex());
+                btnCrear.setEnabled(true);
             }
         } else if (e.getSource().equals(btnCrear)) {
             addNuevoArtista();
@@ -127,6 +136,20 @@ public class NuevoArtista implements WindowListener, ActionListener {
             dlgAsignarEstilos.setVisible(false);
             borrarNuevoArtista();
         }
+    }
+
+    private boolean comprobarCampos() {
+        if (txtPassword.getText().equals(txtPassword2.getText())
+                && txtNombre.getText().length() >0
+                && txtEmail.getText().length() >0
+                && txtPassword.getText().length() >0
+                && txtTlf.getText().length() >0
+                && txtInstagram.getText().length() > 0
+                && txtWeb.getText().length() >0
+                && txtaBio.getText().length() >0) {
+            return true;
+        }
+        return false;
     }
 
     private void borrarNuevoArtista() {
@@ -155,6 +178,7 @@ public class NuevoArtista implements WindowListener, ActionListener {
         txtaEstilosAsignar.setEnabled(false);
         dlgAsignarEstilos.add(txtaEstilosAsignar);
         btnCrear.addActionListener(this);
+        btnCrear.setEnabled(false);
         dlgAsignarEstilos.add(btnCrear);
 
         dlgAsignarEstilos.setResizable(false);
@@ -174,27 +198,15 @@ public class NuevoArtista implements WindowListener, ActionListener {
         cadenaEstilos = cadenaEstilos.replaceAll("\\n","");
         String [] partsEstilos = cadenaEstilos.split("-");
         int idEstilo;
+        if (conexion.insertarUsuario(nombre,txtPassword.getText(),email,1, usuLog)){
+            if (conexion.insertarArtista(nombre,tlf,instagram,web,bio,usuLog)) {
+                for (int i = 0; i < partsEstilos.length; i +=2) {
+                    idEstilo = Integer.parseInt(partsEstilos[i]);
+                    conexion.insertarEstilosArtistas(nombre, idEstilo);
 
-        if (txtPassword.getText().equals(txtPassword2.getText())
-                && nombre.length() >0
-                && email.length() >0
-                && txtPassword.getText().length() >0
-                && txtaEstilosAsignar.getText().length() > 0
-                && tlf.length() >0
-                && instagram.length() > 0
-                && web.length() >0
-                && bio.length() >0) {
-            if (conexion.insertarUsuario(nombre,txtPassword.getText(),email,1, usuLog)){
-                if (conexion.insertarArtista(nombre,tlf,instagram,web,bio,usuLog)) {
-                    for (int i = 0; i < partsEstilos.length; i +=2) {
-                        idEstilo = Integer.parseInt(partsEstilos[i]);
-                        conexion.insertarEstilosArtistas(nombre, idEstilo);
-
-                    }
-                    pantallaExito();
                 }
+                pantallaExito();
             }
-
         } else {
             pantallaError();
         }

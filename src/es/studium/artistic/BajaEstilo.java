@@ -63,8 +63,12 @@ public class BajaEstilo implements WindowListener, ActionListener {
         } else if (dlgConfirmarBaja.isActive()) {
             dlgConfirmarBaja.setVisible(false);
         } else if (dlgBajaConfirmada.isActive()) {
-            dlgBajaConfirmada.setVisible(false);
             dlgConfirmarBaja.setVisible(false);
+            dlgBajaConfirmada.setVisible(false);
+            conexion.rellenarChoiceEstilos(choEstilo);
+        } else if (dlgError.isActive()) {
+            dlgConfirmarBaja.setVisible(false);
+            dlgBajaConfirmada.setVisible(false);
             conexion.rellenarChoiceEstilos(choEstilo);
         }
     }

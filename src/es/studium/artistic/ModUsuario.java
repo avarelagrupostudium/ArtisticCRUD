@@ -36,7 +36,7 @@ public class ModUsuario implements WindowListener, ActionListener, ItemListener 
     //Conexion
     Conexion conexion = new Conexion();
     Usuario usuario = new Usuario();
-    boolean update = false;
+
     String usuLog;
     ModUsuario(String u) {
         this.usuLog = u;
@@ -72,8 +72,8 @@ public class ModUsuario implements WindowListener, ActionListener, ItemListener 
         } else if (dlgError.isActive()) {
             dlgError.setVisible(false);
         } else if (dlgUsuarioModificado.isActive()) {
-            dlgUsuarioModificado.setVisible(false);
             dlgUsuarioEditar.setVisible(false);
+            dlgUsuarioModificado.setVisible(false);
         }
     }
 
@@ -146,55 +146,24 @@ public class ModUsuario implements WindowListener, ActionListener, ItemListener 
         } else if (e.getSource().equals(btnCancelarEditarUsuario)) {
             dlgUsuarioEditar.setVisible(false);
         } else if (e.getSource().equals(btnModificarUsuario)) {
+            String nombre = txtNombreUsuario.getText();
+            String correo = txtCorreoUsuario.getText();
             int tipoUsuario = 1;
             if (cbgAdmin.getSelectedCheckbox().equals(c1)){
                 tipoUsuario = 0;
             }
-            if ((txtPasswordUsuario.getText().length() != 0) && (txtPasswordUsuario.getText().equals(txtPasswordUsuario2.getText())) &&
-                    (txtNombreUsuario.getText().length() != 0) && (txtCorreoUsuario.getText().length() != 0)) {
-                if (conexion.updatePassword(txtPasswordUsuario.getText(), usuario.getIdUsuario(), usuLog) != 0
-                        && conexion.updateUsuario(txtNombreUsuario.getText(), txtCorreoUsuario.getText(), usuario.getIdUsuario(),tipoUsuario, usuLog) != 0) {
-                    update = true;
+            if ((txtPasswordUsuario.getText().length() == 0  || txtPasswordUsuario.getText().equals(txtPasswordUsuario2.getText()))
+                    && nombre.length() > 0 && correo.length() > 0) {
+                if (txtCorreoUsuario.getText().length() > 0){
+                    if(conexion.updatePassword(txtPasswordUsuario.getText(), usuario.getIdUsuario(), usuLog) == 0){
+                        pantallaError();
+                    }
                 }
-            }else if (txtPasswordUsuario.getText() != txtPasswordUsuario2.getText() && txtPasswordUsuario.getText().length() > 0) {
-                dlgError.setSize(250, 100);
-                dlgError.setLayout(new FlowLayout());
-                dlgError.addWindowListener(this);
-                lblError.setText("Las contraseñas no coinciden");
-                dlgError.add(lblError);
-                dlgError.setResizable(false);
-                dlgError.setLocationRelativeTo(null);
-                dlgError.setVisible(true);
-            } else if (txtPasswordUsuario.getText().length() == 0 && txtNombreUsuario.getText().length() != 0 && txtCorreoUsuario.getText().length() != 0) {
-                if (conexion.updateUsuario(txtNombreUsuario.getText(), txtCorreoUsuario.getText(), usuario.getIdUsuario(),tipoUsuario, usuLog) != 0) {
-                    update = true;
+                if (conexion.updateUsuario(txtNombreUsuario.getText(), txtCorreoUsuario.getText(), usuario.getIdUsuario(),tipoUsuario, usuLog) > 0){
+                    pantallaExito();
                 }
-            }else if (txtNombreUsuario.getText().equals("") || txtCorreoUsuario.getText().equals(""))  {
-                    dlgError.setSize(270, 100);
-                    dlgError.setLayout(new FlowLayout());
-                    dlgError.addWindowListener(this);
-                    lblError.setText("ERROR EN LOS DATOS INTRODUCIDOS");
-                    dlgError.add(lblError);
-                    dlgError.setResizable(false);
-                    dlgError.setLocationRelativeTo(null);
-                    dlgError.setVisible(true);
-
-                    txtPasswordUsuario.setText("");
-                    txtPasswordUsuario2.setText("");
-
-            }
-            //Mostramos que la actualización se ha realizado
-            if (update) {
-                dlgUsuarioModificado.setSize(270, 100);
-                dlgUsuarioModificado.setLayout(new FlowLayout());
-                dlgUsuarioModificado.addWindowListener(this);
-                dlgUsuarioModificado.add(lblUsuarioModiciado);
-                choUsuarioMod.removeAll();
-                conexion.rellenarChoiceUsuarios(choUsuarioMod);
-                dlgUsuarioModificado.setResizable(false);
-                dlgUsuarioModificado.setLocationRelativeTo(null);
-                dlgUsuarioModificado.setVisible(true);
-                update = false;
+            }else{
+                pantallaError();
             }
         }
 
@@ -204,4 +173,25 @@ public class ModUsuario implements WindowListener, ActionListener, ItemListener 
     public void itemStateChanged(ItemEvent e) {
 
     }
+    private void pantallaError(){
+        dlgError.setSize(270, 100);
+        dlgError.setLayout(new FlowLayout());
+        dlgError.addWindowListener(this);
+        lblError.setText("ERROR EN LOS DATOS INTRODUCIDOS");
+        dlgError.add(lblError);
+        dlgError.setResizable(false);
+        dlgError.setLocationRelativeTo(null);
+        dlgError.setVisible(true);
+    }private void pantallaExito(){
+        dlgUsuarioModificado.setSize(270, 100);
+        dlgUsuarioModificado.setLayout(new FlowLayout());
+        dlgUsuarioModificado.addWindowListener(this);
+        dlgUsuarioModificado.add(lblUsuarioModiciado);
+        choUsuarioMod.removeAll();
+        conexion.rellenarChoiceUsuarios(choUsuarioMod);
+        dlgUsuarioModificado.setResizable(false);
+        dlgUsuarioModificado.setLocationRelativeTo(null);
+        dlgUsuarioModificado.setVisible(true);
+    }
+
 }
