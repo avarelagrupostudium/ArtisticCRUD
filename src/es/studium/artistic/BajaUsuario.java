@@ -26,7 +26,7 @@ public class BajaUsuario implements WindowListener, ActionListener {
     Button btnContinuar= new Button("Continuar");
     //Dialog borrado fallido
     Dialog dlgError = new Dialog(ventanaBajaUsuario,"ERROR",true);
-    Label lblError = new Label("Algo ha salido mal");
+    Label lblError = new Label("Error en la baja");
     //Conexion
     Conexion conexion = new Conexion();
     //Fuente
@@ -65,7 +65,8 @@ public class BajaUsuario implements WindowListener, ActionListener {
             dlgBajaConfirmada.setVisible(false);
             dlgConfirmarBaja.setVisible(false);
             conexion.rellenarChoiceUsuarios(choUsuario);;
-
+        } else if (dlgError.isActive()) {
+            dlgError.setVisible(false);
         }
     }
     @Override

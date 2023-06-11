@@ -30,7 +30,7 @@ public class ListadoArtista implements WindowListener, ActionListener {
         ventanaArtistaListado.add(btnExportPdf);
         btnExportPdf.addActionListener(this);
 
-
+        ventanaArtistaListado.setResizable(false);
         ventanaArtistaListado.setLocationRelativeTo(null);
         ventanaArtistaListado.setVisible(true);
         areaListado.append(conexion.listadoArtista(usuLog));

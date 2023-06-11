@@ -134,7 +134,5 @@ public class NuevoPublicacion implements WindowListener, ActionListener {
         dlgExito.setLocationRelativeTo(null);
         dlgExito.setVisible(true);
     }
-    public static void main(String[] args) {
-        new NuevoPublicacion("anxo");
-    }
+
 }

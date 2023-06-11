@@ -22,7 +22,7 @@ public class ListadoPublicacion implements WindowListener, ActionListener {
         ventanaPublicacionListado.setLayout(new FlowLayout());
         ventanaPublicacionListado.addWindowListener(this);
         ventanaPublicacionListado.add(lblListado);
-        areaListado.append("id\tNombre Artista\t\tEstilo\t\tFecha\t\tTexto\n");
+        areaListado.append("id\tNombre Artista\tEstilo\t\tFecha\t\tTexto\n");
         areaListado.setSize(390, 300);
         ventanaPublicacionListado.add(areaListado);
         ventanaPublicacionListado.add(btnExportExcel);
@@ -75,10 +75,6 @@ public class ListadoPublicacion implements WindowListener, ActionListener {
         } else if (e.getSource().equals(btnExportExcel)) {
             conexion.publicacionListadoExcel(usuLog);
         }
-    }
-
-    public static void main(String[] args) {
-        new ListadoPublicacion("Anxo");
     }
 
 }

@@ -44,13 +44,13 @@ public class ModArtista implements WindowListener, ActionListener {
     Button btnAddEstilo = new Button("Añadir");
     Button btnDelEstilo = new Button("Eliminar");
     TextArea txtaEstilosAsignar = new TextArea(5,35);
-    Button btnCrear = new Button("Editar Artsita");
+    Button btnCrear = new Button("Editar Artista");
     //Dlg error
     Dialog dlgerror = new Dialog(dlgAsignarEstilos,"ERROR",true);
     Label lblError = new Label("ERROR!! Revise los datos introducidos");
     //Dlg éxito
     Dialog dlgExito = new Dialog(dlgAsignarEstilos,"Alta confiramda",true);
-    Label lblExito = new Label("         Artista añadido        ");
+    Label lblExito = new Label("         Artista modificado        ");
     Button btnExito = new Button("Aceptar");
     //Fuente
     Font myFont = new Font("Verdana", Font.BOLD, 18);
@@ -90,6 +90,7 @@ public class ModArtista implements WindowListener, ActionListener {
         } else if (dlgModArtista.isActive()) {
             dlgModArtista.setVisible(false);
         } else if (dlgAsignarEstilos.isActive()) {
+            txtaEstilosAsignar.setText("");
             dlgAsignarEstilos.setVisible(false);
         } else if (dlgExito.isActive()) {
             dlgModArtista.setVisible(false);
@@ -311,9 +312,5 @@ public class ModArtista implements WindowListener, ActionListener {
         txtPassword2.setText("");
         txtaBio.setText("");
         txtaEstilosAsignar.setText("");
-    }
-
-    public static void main(String[] args) {
-        new ModArtista("Anxo");
     }
 }

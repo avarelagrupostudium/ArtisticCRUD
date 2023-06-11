@@ -85,7 +85,7 @@ public class NuevoEstilo implements WindowListener, ActionListener {
                     dlgExito.setVisible(true);
                 }
             }else {
-                dlgError.setSize(180,100);
+                dlgError.setSize(230,100);
                 dlgError.setLayout(new FlowLayout());
                 dlgError.addWindowListener(this);
 

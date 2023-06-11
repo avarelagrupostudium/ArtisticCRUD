@@ -136,7 +136,7 @@ ModEstilo implements WindowListener, ActionListener {
                     dlgError.setVisible(true);
                 }
             }else{
-                dlgError.setSize(280,200);
+                dlgError.setSize(280,120);
                 dlgError.setLayout(new FlowLayout());
                 dlgError.addWindowListener(this);
 

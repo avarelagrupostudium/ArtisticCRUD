@@ -22,7 +22,7 @@ public class BajaArtista implements WindowListener, ActionListener {
     Button btnNo = new Button("NO");
     //Dialog borrado confirmado
     Dialog dlgBajaConfirmada = new Dialog(ventanaBajaArtista,"BORRADO REALIZADO",true);
-    Label lblBajaConfirmada = new Label("Estilo borrado correctamente");
+    Label lblBajaConfirmada = new Label("Artista borrado correctamente");
     Button btnContinuar= new Button("Continuar");
     //Dialog borrado fallido
     Dialog dlgError = new Dialog(ventanaBajaArtista,"ERROR",true);
@@ -89,7 +89,7 @@ public class BajaArtista implements WindowListener, ActionListener {
                 dlgConfirmarBaja.setSize(360,160);
                 dlgConfirmarBaja.setLayout(new FlowLayout());
                 dlgConfirmarBaja.addWindowListener(this);
-                lblConfirmarBaja.setText("El estilo "+ choArtista.getSelectedItem()+" será borrado de la base de datos ");
+                lblConfirmarBaja.setText("El artista "+ choArtista.getSelectedItem()+" será borrado de la base de datos ");
                 dlgConfirmarBaja.add(lblConfirmarBaja);
                 dlgConfirmarBaja.add(lblPreguntarConfirmarBaja);
                 btnSi.addActionListener(this);
