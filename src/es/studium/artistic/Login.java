@@ -21,6 +21,7 @@ public class Login implements WindowListener, ActionListener {
     Label lblPasswordError = new Label("Credenciales incorrectas");
     Label lblPasswordError2 = new Label("Inténtelo de nuevo");
     Button btnPasswordError = new Button("Aceptar");
+    Button btnAyuda = new Button("?");
     //FUENTE
     Font myFont = new Font("Verdana",Font.BOLD, 32);
     //CONEXION
@@ -48,6 +49,8 @@ public class Login implements WindowListener, ActionListener {
         ventanaLogin.add(btnLogin);
         btnExit.addActionListener(this);
         ventanaLogin.add(btnExit);
+        btnAyuda.addActionListener(this);
+        ventanaLogin.add(btnAyuda);
 
         ventanaLogin.setResizable(false);
         ventanaLogin.setLocationRelativeTo(null);
@@ -105,6 +108,8 @@ public class Login implements WindowListener, ActionListener {
         } else if (e.getSource().equals(btnPasswordError)) {
             txtPassword.setText("");
             dlgPasswordError.setVisible(false);
+        } else if (e.getSource().equals(btnAyuda)) {
+            new Ayuda();
         }
     }
 

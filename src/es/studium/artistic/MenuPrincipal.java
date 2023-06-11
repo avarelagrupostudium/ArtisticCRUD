@@ -38,24 +38,33 @@ public class MenuPrincipal implements WindowListener, ActionListener {
     MenuItem bajaEstilo = new MenuItem("Baja");
     MenuItem modEstilo = new MenuItem("Modificación");
     MenuItem listadoEstilo = new MenuItem("Listado");
+    Button btnAyuda = new Button("?");
     //Conexion
     Conexion conexion = new Conexion();
     //FUENTE
-    Font myFont = new Font("Verdana",Font.BOLD, 24);
+    Font myFont = new Font("Verdana", Font.BOLD, 24);
 
     //Obtener nombre y tipo de Usuario
     int tipoUsuario = 1;
     String usuLog = "****";
-    MenuPrincipal( int i, String u){
+
+    MenuPrincipal(int i, String u) {
         this.usuLog = u;
         this.tipoUsuario = i;
-        ventanaMenuPrincipal.setSize(500,450);
-        ventanaMenuPrincipal.setLayout(new FlowLayout());
+        ventanaMenuPrincipal.setSize(500, 450);
+        ventanaMenuPrincipal.setLayout(null);
         ventanaMenuPrincipal.addWindowListener(this);
         ventanaMenuPrincipal.setMenuBar(barraPrincipal);
         lblUsuarioLogueado.setFont(myFont);
+        lblUsuarioLogueado.setLocation(50, 200);
+        lblUsuarioLogueado.setSize(500, 50);
         lblUsuarioLogueado.setText("BIENVENIDO A ARTISTIC " + usuLog);
+        btnAyuda.addActionListener(this);
+        btnAyuda.setSize(25, 25);
         ventanaMenuPrincipal.add(lblUsuarioLogueado);
+
+        ventanaMenuPrincipal.add(btnAyuda);
+        btnAyuda.setLocation(450, 400);
         //Action Listeners Usuarios
         nuevoUsuario.addActionListener(this);
         bajaUsuario.addActionListener(this);
@@ -113,7 +122,8 @@ public class MenuPrincipal implements WindowListener, ActionListener {
     }
 
     @Override
-    public void windowOpened(WindowEvent e) {}
+    public void windowOpened(WindowEvent e) {
+    }
 
     @Override
     public void windowClosing(WindowEvent e) {
@@ -121,20 +131,30 @@ public class MenuPrincipal implements WindowListener, ActionListener {
         System.exit(0);
 
     }
+
     @Override
-    public void windowClosed(WindowEvent e) {}
+    public void windowClosed(WindowEvent e) {
+    }
+
     @Override
-    public void windowIconified(WindowEvent e) {}
+    public void windowIconified(WindowEvent e) {
+    }
+
     @Override
-    public void windowDeiconified(WindowEvent e) {}
+    public void windowDeiconified(WindowEvent e) {
+    }
+
     @Override
-    public void windowActivated(WindowEvent e) {}
+    public void windowActivated(WindowEvent e) {
+    }
+
     @Override
-    public void windowDeactivated(WindowEvent e) {}
+    public void windowDeactivated(WindowEvent e) {
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource().equals(nuevoUsuario)){
+        if (e.getSource().equals(nuevoUsuario)) {
             new NuevoUsuario(tipoUsuario, usuLog);
         } else if (e.getSource().equals(bajaUsuario)) {
             new BajaUsuario(usuLog);
@@ -166,6 +186,8 @@ public class MenuPrincipal implements WindowListener, ActionListener {
             new ModEstilo(usuLog);
         } else if (e.getSource().equals(listadoEstilo)) {
             new ListadoEstilo(usuLog);
+        } else if (e.getSource().equals(btnAyuda)) {
+            new Ayuda();
         }
     }
 }
